@@ -67,7 +67,7 @@ function Diagnose(props) {
                             <form className="form-contact contact_form">
                                 {
                                     loading ? (
-                                        <p>Loading...</p>
+                                        <h5>Loading...</h5>
                                     ) : questions && questions.map((question, index) => {
 
                                         return (
@@ -90,9 +90,12 @@ function Diagnose(props) {
                                 <div className="form-group">
                                     
                             
-
+                                    {
+                                        !loading && (
+                                            <div onClick={() => handleSubmit()} className="boxed-btn3">Lihat Hasil</div>
+                                        )
+                                    }
                                         
-                                                    <div onClick={() => handleSubmit()} className="boxed-btn3">Lihat Hasil</div>
                                                
                                     
                                     
