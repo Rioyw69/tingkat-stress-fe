@@ -25,8 +25,10 @@ function ResultDiagnose(props) {
                         <h1>Hasil Konsultasi</h1>
                         { result <= 4 ?
                                     <Fragment>
-                                        <p>Anda Tidak stres tapi hanya kelelahan </p>
-                                        <p>Saya sarankan anda makan-makanan bergizi seimbang</p>
+                                        <strong>Anda Tidak stres Hanya Kelelahan </strong>
+                                        <p>Istirahat yang cukup</p>
+                                        <p>Makan Dengan Teratur</p>
+                                        <p>Jalani Hidupe Seperti Biasa</p>
                                     </Fragment> 
                                      : result <= 8.4 ? 
                                      <Fragment>
