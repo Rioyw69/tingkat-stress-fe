@@ -7,21 +7,25 @@ import Advice from './pages/Advice'
 import Information from './pages/Information'
 import Error404 from './pages/Error404'
 import ResultDiagnose from './pages/ResultDiagnose'
+import Login from './pages/Login'
+import routes from './routes'
 
-function App()
+function App(props)
 {
   return (
     <BrowserRouter>
-      <Layout>
         <Switch>
-          <Route path="/" exact={true} component={Home} />
-          <Route path="/diagnose" exact={true} component={Diagnose} />
-          <Route path="/diagnose/:result" exact={true} component={ResultDiagnose} />
-          <Route path="/advice" exact={true} component={Advice} />
-          <Route path="/information" exact={true} component={Information} />
-          <Route component={Error404} />
+          {
+            routes && routes.map((route, index) => {
+              return <Route key={index} path={route.path} exact={route.exact} component={(props) => {
+                return <Layout {...props}>
+                  <route.component {...props} />
+                </Layout>
+              }} />
+            })
+          }
+            <Route component={Error404} />
         </Switch>
-      </Layout>
     </BrowserRouter>
   )
 }

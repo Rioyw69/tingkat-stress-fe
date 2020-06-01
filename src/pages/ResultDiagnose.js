@@ -23,16 +23,16 @@ function ResultDiagnose(props) {
                 <div className="row">
                     <div className="col-xl-12">
                         <h1>Hasil Konsultasi</h1>
-                        { result <= 600 ?
+                        { result <= 4 ?
                                     <Fragment>
                                         <p>Anda Tidak stres tapi hanya kelelahan </p>
                                         <p>Saya sarankan anda makan-makanan bergizi seimbang</p>
                                     </Fragment> 
-                                     : result <= 1200 ? 
+                                     : result <= 8.4 ? 
                                      <Fragment>
                                         <p>Anda Mengalami Stress Tingkat Rigan </p>
                                         <p>Saya sarankan anda makan-makanan bergizi seimbang</p>
-                                    </Fragment>  :  result <= 1800 ?
+                                    </Fragment>  :  result <= 18.4 ?
                                     <Fragment>
                                         <p>Anda Mengalamai Stres Tingkat Sedang </p>
                                         <p>Saya sarankan anda makan-makanan bergizi seimbang</p>

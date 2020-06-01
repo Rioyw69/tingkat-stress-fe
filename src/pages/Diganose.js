@@ -6,7 +6,7 @@ import { url } from '../global'
 function Diagnose(props) {
 
     const [isChecked, setIsChecked] = useState(false)
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [questions, setQuestion] = useState([])
     const [results, setResults] = useState([])
 
@@ -46,6 +46,10 @@ function Diagnose(props) {
 
     return (
         <Fragment>
+            {
+                loading && <div className="loading"><img width="200" src={require('../assets/img/loading.gif')}
+                 /></div>
+            }
             <div className="bradcam_area bradcam_overlay"  style={{ backgroundImage: `url(${(require('../assets/img/bg.png'))})` }}>
                 <div className="container">
                     <div className="row">
@@ -66,9 +70,7 @@ function Diagnose(props) {
                             <h1>Jawab quisioner di bawah ini</h1>
                             <form className="form-contact contact_form">
                                 {
-                                    loading ? (
-                                        <h5>Loading...</h5>
-                                    ) : questions && questions.map((question, index) => {
+                                    questions && questions.map((question, index) => {
 
                                         return (
                                             <div className="form-group mt-4" key={question._id}>
@@ -97,7 +99,7 @@ function Diagnose(props) {
                                     }
                                         
                                                
-                                    
+                                     
                                     
                                 </div>
                             </form>

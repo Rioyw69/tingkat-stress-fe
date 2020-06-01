@@ -4,7 +4,7 @@ import Header from './Header'
 function Layout(props) {
     return (
         <Fragment>
-            <Header />
+            <Header {...props} />
             {props.children}
         </Fragment>
     )
