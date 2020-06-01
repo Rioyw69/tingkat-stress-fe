@@ -28,20 +28,20 @@ function ResultDiagnose(props) {
                                         <strong>Anda Tidak stres Hanya Kelelahan </strong>
                                         <p>Istirahat yang cukup</p>
                                         <p>Makan Dengan Teratur</p>
-                                        <p>Jalani Hidupe Seperti Biasa</p>
+                                        <p>Jalani Hidup Seperti Biasa</p>
                                     </Fragment> 
                                      : result <= 8.4 ? 
                                      <Fragment>
                                         <p>Anda Mengalami Stress Tingkat Rigan </p>
-                                        <p>Saya sarankan anda makan-makanan bergizi seimbang</p>
+                                        <p>Baca Saran Untuk Tingkat Stres Ringan </p>
                                     </Fragment>  :  result <= 18.4 ?
                                     <Fragment>
                                         <p>Anda Mengalamai Stres Tingkat Sedang </p>
-                                        <p>Saya sarankan anda makan-makanan bergizi seimbang</p>
+                                        <p>Baca Saran Untuk Tingkat Stres Sedang</p>
                                     </Fragment> :
                                      <Fragment>
                                         <p>Anda Mengalami Stres Tingkat Berat</p>
-                                        <p>Saya sarankan anda makan-makanan bergizi seimbang</p>
+                                        <p>Baca Saran Untuk Tingkat Stres Berat</p>
                                     </Fragment> 
                         }
                     </div>
