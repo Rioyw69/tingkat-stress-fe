@@ -32,7 +32,7 @@ function ResultDiagnose(props) {
                                     </Fragment> 
                                      : result <= 8.4 ? 
                                      <Fragment>
-                                        <strong>Anda Mengalami Stress Tingkat Rigan</strong>
+                                        <strong>Anda Mengalami Stress Tingkat Ringan</strong>
                                         <p>saran</p>
                                         <strong>Menghirup aroma terapi</strong>
                                         <p>Aroma yang sifatnya 
