@@ -67,7 +67,7 @@ function Diagnose(props) {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-12">
-                            <h1>Jawab quisioner di bawah ini</h1>
+                            <h1>Jawab Kuesioner Dibawah Ini</h1>
                             <form className="form-contact contact_form">
                                 {
                                     questions && questions.map((question, index) => {
