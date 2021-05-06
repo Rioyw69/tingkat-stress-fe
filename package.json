@@ -13,7 +13,7 @@
     "react": "^16.13.1",
     "react-bootstrap4-modal": "^1.7.4",
     "react-dom": "^16.13.1",
-    "react-draft-wysiwyg": "^1.14.5",
+    "react-draft-wysiwyg": "^1.14.6",
     "react-html-parser": "^2.0.2",
     "react-js-pagination": "^3.0.3",
     "react-notifications": "^1.6.0",
